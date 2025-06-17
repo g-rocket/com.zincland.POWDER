@@ -1,0 +1,15 @@
+id: com.zincland.POWDER
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: powder
+modules:
+  - name: powder
+    buildsystem: simple
+    build-commands:
+      - ./buildall.sh
+      - install -Dm755 powder /app/bin/powder
+    sources:
+      - type: archive
+        url: http://www.zincland.com/powder/release/powder118_src.tar.gz
+        sha256: 4e812f3972c7dd1ff2403557d1cd891a98470f59ccf09bc03ce79dafd118f3d7
