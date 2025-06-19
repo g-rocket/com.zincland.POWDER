@@ -3,9 +3,9 @@
   <id>com.zincland.POWDER</id>
 
   <name>POWDER</name>
-  <summary>A Roguelike designed for the Gameboy Advance and Nintendo DS.</summary>
+  <summary>A Roguelike designed for the Gameboy Advance and Nintendo DS</summary>
 
-  <metadata_license>FSFAP</metadata_license><!-- TODO -- invalid because description is not permissively licensed -->
+  <metadata_license>FSFAP</metadata_license><!-- TODO: invalid because description is not permissively licensed -->
   <project_license>LicenseRef-proprietary</project_license>
 
   <description>
@@ -27,6 +27,23 @@
       Having defined Roguelike, POWDER is easy to describe: A Roguelike designed for the Gameboy Advance and Nintendo DS.
     </p>
   </description>
+
+  <url type="homepage">http://www.zincland.com/powder/</url>
+  <developer id="com.zincland">
+    <name>Jeff Lait</name>
+  </developer>
+
+  <content_rating type="oars-1.0">
+    <!-- TODO: try harder to make sure this is true -->
+    <content_attribute id="violence-cartoon">moderate</content_attribute>
+    <content_attribute id="violence-bloodshed">mild</content_attribute>
+    <content_attribute id="language-profanity">mild</content_attribute>
+  </content_rating>
+
+  <releases>
+    <release version="118" date="2018-02-25" />
+    <!-- TODO: is there any point in adding past releases here?-->
+  </releases>
 
   <launchable type="desktop-id">com.zincland.POWDER.desktop</launchable>
 </component>
