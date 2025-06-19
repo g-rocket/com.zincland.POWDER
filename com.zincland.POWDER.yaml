@@ -18,6 +18,9 @@ modules:
 
       - ffmpeg -i gfx/icon_sdl.bmp $FLATPAK_ID.png
       - install -Dm0644 $FLATPAK_ID.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/$FLATPAK_ID.png
+
+      - ffmpeg -i gfx/icon_sdl.bmp -vf scale=128x128 -sws_flags neighbor $FLATPAK_ID-128x128.png
+      - install -Dm0644 $FLATPAK_ID-128x128.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
     sources:
       - type: archive
         url: http://www.zincland.com/powder/release/powder118_src.tar.gz
